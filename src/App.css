@@ -1,0 +1,23 @@
+/* Colore Laravel e transizioni */
+.text-laravel {
+  color: #ff2d20;
+}
+.btn-laravel {
+  background-color: #ff2d20;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.btn-laravel:hover {
+  background-color: #e0281d;
+  color: white;
+  transform: scale(1.05);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+}
