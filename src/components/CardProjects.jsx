@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CardProjects({ project }) {
   return (
     <div className="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
@@ -30,9 +32,12 @@ function CardProjects({ project }) {
               </div>
             </div>
             <div className="col-4 text-end">
-              <button className="btn btn-outline-dark btn-sm rounded-pill px-3">
+              <Link
+                to={`/projects/${project.id}`}
+                className="btn btn-outline-dark btn-sm rounded-pill px-3"
+              >
                 Details
-              </button>
+              </Link>
             </div>
           </div>
         </div>
